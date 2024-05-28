@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo App</title>
+    <style>
+        #main-heading{
+            text-align: center;
+             font-family: Arial, Helvetica, sans-serif;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 200px 150px 100px;
+            column-gap: 10px;
+            row-gap: 10px;
+            margin-top: 10px;
+            align-items: center;
+        }
+        #tudo-input,#todo-date{
+            font-size: 15px;
+            padding: 10px 5px;
+        }
+        .todo-btn{
+            background-color: rgb(72, 157, 223);
+            color: rgb(164, 29, 54);
+            padding: 10px 0px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .todo-delete{
+            background-color: maroon;
+            color: whitesmoke;
+            padding: 10px 0px;
+            border-radius: 10px;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Todo App </h1>
+    <div class="grid-container">
+   
+    <input type="text" id="tudo-input" placeholder="Enter Todo here">
+    <input type="date" id="todo-date">
+    <button onclick="getAdd()" class="todo-btn">Add</button>
+    </div>
+   
+    <div class="todo-container grid-container"></div>
+    
+    <script src="tudo.js"></script>
+</body>
+</html>
